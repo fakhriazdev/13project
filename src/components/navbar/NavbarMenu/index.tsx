@@ -69,12 +69,27 @@ export const Menu = ({
 }) => {
   return (
       <nav onMouseLeave={() => setActive(null)} // resets the state
-          className="relative bg-white flex justify-between space-x-8 px-8 py-6 max-w-lg"
+          className="relative bg-white hidden md:flex justify-between space-x-8 px-8 py-6 max-w-lg"
       >
         {children}
       </nav>
   );
 };
+
+export  const BrandLogo = () =>{
+    return (
+        <div className="w-20 h-20 px-8 py-2 object-fill my-auto flex gap-2 justify-center text-center items-center text-black">
+            <Image
+                src="/brand.png"
+                width={20}
+                height={20}
+                alt="13 Project"
+            />
+            <p className="text-lg">Project</p>
+        </div>
+
+    )
+}
 
 export const ProductItem = ({
                               title,
