@@ -1,7 +1,6 @@
 "use client";
 
 import { NavbarDemo } from "@/components/navbar/Navbar";
-import { MenuItem } from "@/components/navbar/NavbarMenu";
 import { Tooltip } from "@/components/ToolTip/";
 import Image from "next/image";
 import React from "react";
