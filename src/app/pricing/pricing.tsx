@@ -6,7 +6,7 @@ import { pricings } from "./data";
 
 export default function Pricing() {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <HoverEffectPricing items={pricings} />
     </div>
   );
