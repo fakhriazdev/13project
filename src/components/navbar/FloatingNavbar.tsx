@@ -85,16 +85,16 @@ const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative items-center flex space-x-1 text-black hover:text-neutral-500 font-medium"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className=" sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <button className="bg-orange border text-sm font-medium relative border-neutral-200 text-white px-4 py-3 rounded-full">
+        <button className="bg-black border text-sm font-normal relative border-neutral-200 text-orange px-4 py-3 rounded-full">
           <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-orange to-transparent h-px" />
         </button>
       </motion.div>
     </AnimatePresence>

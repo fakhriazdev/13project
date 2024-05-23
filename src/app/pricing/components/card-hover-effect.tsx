@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { IPricing } from "../data";
-
+import { BadgeCheck } from 'lucide-react';
 export const HoverEffectPricing = ({
   items,
   className,
@@ -52,7 +52,7 @@ export const HoverEffectPricing = ({
               {item.listFeature.map((x, key) => {
                 return (
                   <li className="text-black" key={key}>
-                    ✔️ {x}
+                    <div className="flex gap-2 items-center "><BadgeCheck className="text-orange" size={20} /> {x}</div>
                   </li>
                 );
               })}

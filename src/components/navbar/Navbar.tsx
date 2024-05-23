@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import {BrandLogo, HoveredLink, Menu, MenuItem, ProductItem} from "@/components/navbar/NavbarMenu";
 import { cn } from "@/app/utils/cn";
+import Link from "next/link";
+import { Twitter,Instagram,Linkedin,Github} from 'lucide-react';
 
 export function NavbarDemo() {
   return (
@@ -32,7 +34,13 @@ function Navbar({ className }: { className?: string }) {
 
             </MenuItem>
           </Menu>
-          <button className="my-auto bg-black px-6 py-2 text-sm rounded-full text-white">Contact Us</button>
+            <div className="flex gap-4 my-auto bg-gray px-4 py-2 text-sm font-medium rounded-full">
+                <Link className="text-black hover:text-orange" href={"#"}><Twitter size="18"/></Link>
+                <Link className="text-black hover:text-orange" href={"#"}><Instagram size="18"/></Link>
+                <Link className="text-black hover:text-orange" href={"#"}><Linkedin size="18"/></Link>
+                <Link className="text-black hover:text-orange" href={"#"}><Github size="18"/></Link>
+            </div>
+
         </div>
 
       </>
